@@ -6,6 +6,9 @@
 .cache
 dist
 
+INSTALLATION.txt
+INSTALLATION_MULTIVILLE.txt
+
 # 
 node_modules
 .env
