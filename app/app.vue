@@ -148,9 +148,8 @@ onMounted(() => {
 
 onMounted(async () => {
   try {
-    const response = await fetch(
-      `/data/cities.json?v=${Date.now()}`,
-    )
+
+    const response = await fetch("/data/cities.json")
 
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`)
@@ -335,6 +334,7 @@ watch(
               :city-name="currentCityName"
               :bw="selectedBw"
               :cutoff="currentCutoff"
+              :dark-mode="darkMode"
             />
 
             <template #fallback>

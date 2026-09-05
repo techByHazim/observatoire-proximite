@@ -551,10 +551,7 @@ async function loadBoundary() {
   }
 
   try {
-    const separator = props.boundaryUrl.includes("?") ? "&" : "?"
-    const response = await fetch(
-      `${props.boundaryUrl}${separator}v=${Date.now()}`,
-    )
+    const response = await fetch(props.boundaryUrl)
 
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`)
@@ -689,10 +686,7 @@ async function loadData() {
   hoverPopup?.remove()
 
   try {
-    const separator = props.dataUrl.includes("?") ? "&" : "?"
-    const response = await fetch(
-      `${props.dataUrl}${separator}v=${Date.now()}`,
-    )
+    const response = await fetch(props.dataUrl)
 
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`)
