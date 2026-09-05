@@ -831,11 +831,17 @@ onMounted(() => {
     console.error("Erreur MapLibre :", event.error)
   })
 
-  carte.on("load", () => {
-    updateBasemapTheme()
-    loadData()
-    loadBoundary()
-  })
+  const initializeThematicLayers = () => {
+  updateBasemapTheme()
+  void loadData()
+  void loadBoundary()
+  }
+
+  if (carte.isStyleLoaded()) {
+     initializeThematicLayers()
+  } else {
+  carte.once("style.load", initializeThematicLayers)
+ }
 })
 
 watch(
