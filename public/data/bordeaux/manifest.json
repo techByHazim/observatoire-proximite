@@ -1,0 +1,328 @@
+{
+  "name": "Bordeaux",
+  "slug": "bordeaux",
+  "code": "33063",
+  "boundary": "/data/bordeaux/boundary.geojson",
+  "scales": [
+    {
+      "bw": 50,
+      "cutoff": 250,
+      "file": "/data/bordeaux/bw50.geojson",
+      "analysis": {
+        "pc1_evr": 0.48176960773929034,
+        "pc1_population_r": 0.2215742360646103,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": -0.009475979548163729,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.04402529437187915,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.441204625147993,
+        "pc1_income_q5_median": -1.3769681230281638
+      }
+    },
+    {
+      "bw": 100,
+      "cutoff": 500,
+      "file": "/data/bordeaux/bw100.geojson",
+      "analysis": {
+        "pc1_evr": 0.5815421159671578,
+        "pc1_population_r": 0.30023244729330695,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.006632347764027263,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.11165388610964816,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.3792249638374976,
+        "pc1_income_q5_median": -1.1915921072304072
+      }
+    },
+    {
+      "bw": 150,
+      "cutoff": 750,
+      "file": "/data/bordeaux/bw150.geojson",
+      "analysis": {
+        "pc1_evr": 0.6831948570237353,
+        "pc1_population_r": 0.33697188750075174,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.03913800329460292,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.10206617651418498,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.2081821098853824,
+        "pc1_income_q5_median": -1.026291857169178
+      }
+    },
+    {
+      "bw": 200,
+      "cutoff": 1000,
+      "file": "/data/bordeaux/bw200.geojson",
+      "analysis": {
+        "pc1_evr": 0.7570492582905278,
+        "pc1_population_r": 0.3527513877142638,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.06522578287227622,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.1981171044443637,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.2829417076456349,
+        "pc1_income_q5_median": -0.916258419246123
+      }
+    },
+    {
+      "bw": 250,
+      "cutoff": 1250,
+      "file": "/data/bordeaux/bw250.geojson",
+      "analysis": {
+        "pc1_evr": 0.805694835630342,
+        "pc1_population_r": 0.3609882162671588,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.08539564474543064,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.23827085672033782,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.2958698558779584,
+        "pc1_income_q5_median": -0.8387007647342901
+      }
+    },
+    {
+      "bw": 300,
+      "cutoff": 1500,
+      "file": "/data/bordeaux/bw300.geojson",
+      "analysis": {
+        "pc1_evr": 0.8383521122765724,
+        "pc1_population_r": 0.365709919796686,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.1027931612593383,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.30376739055947066,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.3523482430894658,
+        "pc1_income_q5_median": -0.7694712064587624
+      }
+    },
+    {
+      "bw": 350,
+      "cutoff": 1750,
+      "file": "/data/bordeaux/bw350.geojson",
+      "analysis": {
+        "pc1_evr": 0.8613391110058447,
+        "pc1_population_r": 0.36845173386905306,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.1192220234697337,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.33620715087245356,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.3727455514022409,
+        "pc1_income_q5_median": -0.7172554938598579
+      }
+    },
+    {
+      "bw": 400,
+      "cutoff": 2000,
+      "file": "/data/bordeaux/bw400.geojson",
+      "analysis": {
+        "pc1_evr": 0.8787135470423533,
+        "pc1_population_r": 0.3701711813762813,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.1318165829875534,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.34203301746326975,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.3727225900427418,
+        "pc1_income_q5_median": -0.6879998960818515
+      }
+    },
+    {
+      "bw": 450,
+      "cutoff": 2250,
+      "file": "/data/bordeaux/bw450.geojson",
+      "analysis": {
+        "pc1_evr": 0.8922917714108944,
+        "pc1_population_r": 0.3709578667790509,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.141432640155759,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.3321546438930989,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.340313456461882,
+        "pc1_income_q5_median": -0.6586071596281314
+      }
+    },
+    {
+      "bw": 500,
+      "cutoff": 2500,
+      "file": "/data/bordeaux/bw500.geojson",
+      "analysis": {
+        "pc1_evr": 0.9032206709221691,
+        "pc1_population_r": 0.3713738906022372,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.14872572225342148,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.3576528380343665,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.3238078905475437,
+        "pc1_income_q5_median": -0.5733645749453704
+      }
+    },
+    {
+      "bw": 550,
+      "cutoff": 2750,
+      "file": "/data/bordeaux/bw550.geojson",
+      "analysis": {
+        "pc1_evr": 0.912210165310784,
+        "pc1_population_r": 0.37160857842574135,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.15311744639844277,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.34315974932454907,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.2863633520809081,
+        "pc1_income_q5_median": -0.5492318546375909
+      }
+    },
+    {
+      "bw": 600,
+      "cutoff": 3000,
+      "file": "/data/bordeaux/bw600.geojson",
+      "analysis": {
+        "pc1_evr": 0.9196876946708537,
+        "pc1_population_r": 0.3715675034544377,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.15486116238194597,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.362080099040899,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.2574307588690359,
+        "pc1_income_q5_median": -0.4761449451272455
+      }
+    },
+    {
+      "bw": 650,
+      "cutoff": 3250,
+      "file": "/data/bordeaux/bw650.geojson",
+      "analysis": {
+        "pc1_evr": 0.9259483909669902,
+        "pc1_population_r": 0.37146472170459216,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.15581821183306904,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.39075657924756735,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.246718701810878,
+        "pc1_income_q5_median": -0.39317775876450767
+      }
+    },
+    {
+      "bw": 700,
+      "cutoff": 3500,
+      "file": "/data/bordeaux/bw700.geojson",
+      "analysis": {
+        "pc1_evr": 0.9312404408480845,
+        "pc1_population_r": 0.3711306283642903,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.1560638802275356,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.4131949918463265,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.229817573139284,
+        "pc1_income_q5_median": -0.314917305716621
+      }
+    },
+    {
+      "bw": 750,
+      "cutoff": 3750,
+      "file": "/data/bordeaux/bw750.geojson",
+      "analysis": {
+        "pc1_evr": 0.9357106554959541,
+        "pc1_population_r": 0.37073962845992203,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.1559007990166412,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.4381059239109789,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.230906622490605,
+        "pc1_income_q5_median": -0.258045760308684
+      }
+    },
+    {
+      "bw": 800,
+      "cutoff": 4000,
+      "file": "/data/bordeaux/bw800.geojson",
+      "analysis": {
+        "pc1_evr": 0.9395568709171244,
+        "pc1_population_r": 0.37033443656049087,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.15653573605992882,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.4679995434657358,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.2408827068593011,
+        "pc1_income_q5_median": -0.20476569818133328
+      }
+    },
+    {
+      "bw": 850,
+      "cutoff": 4250,
+      "file": "/data/bordeaux/bw850.geojson",
+      "analysis": {
+        "pc1_evr": 0.9428487287552157,
+        "pc1_population_r": 0.36993478550519254,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.1572915212359149,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.48280336398213536,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.216217618212252,
+        "pc1_income_q5_median": -0.15403070712700262
+      }
+    },
+    {
+      "bw": 900,
+      "cutoff": 4500,
+      "file": "/data/bordeaux/bw900.geojson",
+      "analysis": {
+        "pc1_evr": 0.9457266218921118,
+        "pc1_population_r": 0.3695166036987775,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.15723285444725452,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.4822998237806449,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.1544036524919727,
+        "pc1_income_q5_median": -0.10724292284956949
+      }
+    },
+    {
+      "bw": 950,
+      "cutoff": 4750,
+      "file": "/data/bordeaux/bw950.geojson",
+      "analysis": {
+        "pc1_evr": 0.9482541008896662,
+        "pc1_population_r": 0.36915887479384957,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.15795596691452102,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.48208104821880987,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.1060675688605601,
+        "pc1_income_q5_median": -0.06763037878225231
+      }
+    },
+    {
+      "bw": 1000,
+      "cutoff": 5000,
+      "file": "/data/bordeaux/bw1000.geojson",
+      "analysis": {
+        "pc1_evr": 0.9504898070173206,
+        "pc1_population_r": 0.36873499743950033,
+        "population_correlation_n": 851,
+        "pc1_income_spearman": 0.15788913194868076,
+        "income_correlation_n": 851,
+        "pc1_income_gap": 0.4844757950220644,
+        "pc1_income_gap_n": 341,
+        "pc1_income_q1_median": -1.067064565691756,
+        "pc1_income_q5_median": -0.037639609912976546
+      }
+    }
+  ]
+}

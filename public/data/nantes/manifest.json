@@ -1,0 +1,328 @@
+{
+  "name": "Nantes",
+  "slug": "nantes",
+  "code": "44109",
+  "boundary": "/data/nantes/boundary.geojson",
+  "scales": [
+    {
+      "bw": 50,
+      "cutoff": 250,
+      "file": "/data/nantes/bw50.geojson",
+      "analysis": {
+        "pc1_evr": 0.4821075790284613,
+        "pc1_population_r": 0.19307939907081556,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": -0.15897386971691257,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": -0.25571835812561095,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -1.2348674645742999,
+        "pc1_income_q5_median": -1.5658573736663726
+      }
+    },
+    {
+      "bw": 100,
+      "cutoff": 500,
+      "file": "/data/nantes/bw100.geojson",
+      "analysis": {
+        "pc1_evr": 0.6007653432386015,
+        "pc1_population_r": 0.2428194365714274,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": -0.13814433841956328,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": -0.2950289856599491,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.9461643150496047,
+        "pc1_income_q5_median": -1.4393604059182883
+      }
+    },
+    {
+      "bw": 150,
+      "cutoff": 750,
+      "file": "/data/nantes/bw150.geojson",
+      "analysis": {
+        "pc1_evr": 0.7030978221753246,
+        "pc1_population_r": 0.26345109901673586,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": -0.10593269420229301,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": -0.2550583244482643,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.7196307857611663,
+        "pc1_income_q5_median": -1.1459610217066998
+      }
+    },
+    {
+      "bw": 200,
+      "cutoff": 1000,
+      "file": "/data/nantes/bw200.geojson",
+      "analysis": {
+        "pc1_evr": 0.773979232299736,
+        "pc1_population_r": 0.27243200640382154,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": -0.07446620822355965,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": -0.2011792418824522,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.6623442281681491,
+        "pc1_income_q5_median": -0.9805442516012896
+      }
+    },
+    {
+      "bw": 250,
+      "cutoff": 1250,
+      "file": "/data/nantes/bw250.geojson",
+      "analysis": {
+        "pc1_evr": 0.8197345549103653,
+        "pc1_population_r": 0.2794623975239315,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": -0.04194539251520547,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": -0.12938669642861905,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.6389804920180067,
+        "pc1_income_q5_median": -0.8336267045547467
+      }
+    },
+    {
+      "bw": 300,
+      "cutoff": 1500,
+      "file": "/data/nantes/bw300.geojson",
+      "analysis": {
+        "pc1_evr": 0.8499708895732578,
+        "pc1_population_r": 0.2870536924615308,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": -0.012419972738309309,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": -0.08198982146369364,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.6247960423686523,
+        "pc1_income_q5_median": -0.7430221864595257
+      }
+    },
+    {
+      "bw": 350,
+      "cutoff": 1750,
+      "file": "/data/nantes/bw350.geojson",
+      "analysis": {
+        "pc1_evr": 0.8706312252466777,
+        "pc1_population_r": 0.29540742006821324,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.012371243312583354,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": -0.0010826089536718976,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.6590667481410479,
+        "pc1_income_q5_median": -0.6606408619347364
+      }
+    },
+    {
+      "bw": 400,
+      "cutoff": 2000,
+      "file": "/data/nantes/bw400.geojson",
+      "analysis": {
+        "pc1_evr": 0.8854056178514601,
+        "pc1_population_r": 0.30389997491296017,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.03327983659407392,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": 0.07837995694010934,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.7100589469476906,
+        "pc1_income_q5_median": -0.596184550463126
+      }
+    },
+    {
+      "bw": 450,
+      "cutoff": 2250,
+      "file": "/data/nantes/bw450.geojson",
+      "analysis": {
+        "pc1_evr": 0.8963378522172422,
+        "pc1_population_r": 0.3118637120295362,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.050765752428219596,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": 0.14478254706927798,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.7197610721161924,
+        "pc1_income_q5_median": -0.5020273460566742
+      }
+    },
+    {
+      "bw": 500,
+      "cutoff": 2500,
+      "file": "/data/nantes/bw500.geojson",
+      "analysis": {
+        "pc1_evr": 0.9048816718085055,
+        "pc1_population_r": 0.31946794628412734,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.06469463453550513,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": 0.232916246759518,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.750140944095302,
+        "pc1_income_q5_median": -0.3902710638701987
+      }
+    },
+    {
+      "bw": 550,
+      "cutoff": 2750,
+      "file": "/data/nantes/bw550.geojson",
+      "analysis": {
+        "pc1_evr": 0.9119121183119853,
+        "pc1_population_r": 0.3263402254363675,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.07620771648339635,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": 0.269992666756006,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.7819541672034556,
+        "pc1_income_q5_median": -0.3588941863430595
+      }
+    },
+    {
+      "bw": 600,
+      "cutoff": 3000,
+      "file": "/data/nantes/bw600.geojson",
+      "analysis": {
+        "pc1_evr": 0.9180095339142764,
+        "pc1_population_r": 0.332583785938823,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.08513355623516239,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": 0.325396477598764,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.8001811487184014,
+        "pc1_income_q5_median": -0.27266953219472456
+      }
+    },
+    {
+      "bw": 650,
+      "cutoff": 3250,
+      "file": "/data/nantes/bw650.geojson",
+      "analysis": {
+        "pc1_evr": 0.9233685877899077,
+        "pc1_population_r": 0.33834071868321325,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.09371795865396192,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": 0.3676518971392369,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.8152885137152364,
+        "pc1_income_q5_median": -0.19490396543704946
+      }
+    },
+    {
+      "bw": 700,
+      "cutoff": 3500,
+      "file": "/data/nantes/bw700.geojson",
+      "analysis": {
+        "pc1_evr": 0.9281096684458413,
+        "pc1_population_r": 0.3436368290119489,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.10121878203425634,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": 0.3928466656430664,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.8176211540556024,
+        "pc1_income_q5_median": -0.14004333176324457
+      }
+    },
+    {
+      "bw": 750,
+      "cutoff": 3750,
+      "file": "/data/nantes/bw750.geojson",
+      "analysis": {
+        "pc1_evr": 0.9323418424331871,
+        "pc1_population_r": 0.34830288653408853,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.10819859141761429,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": 0.4047459532995224,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.7955060280656605,
+        "pc1_income_q5_median": -0.07804864135357281
+      }
+    },
+    {
+      "bw": 800,
+      "cutoff": 4000,
+      "file": "/data/nantes/bw800.geojson",
+      "analysis": {
+        "pc1_evr": 0.9361382356402211,
+        "pc1_population_r": 0.35235808890082176,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.11477914203669796,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": 0.40273011409911436,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.7634854516530616,
+        "pc1_income_q5_median": -0.033016038655843793
+      }
+    },
+    {
+      "bw": 850,
+      "cutoff": 4250,
+      "file": "/data/nantes/bw850.geojson",
+      "analysis": {
+        "pc1_evr": 0.9395984846795649,
+        "pc1_population_r": 0.35585750467498045,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.12098611902651257,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": 0.40722543963745617,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.7516460752460148,
+        "pc1_income_q5_median": 0.009295401980663698
+      }
+    },
+    {
+      "bw": 900,
+      "cutoff": 4500,
+      "file": "/data/nantes/bw900.geojson",
+      "analysis": {
+        "pc1_evr": 0.9427058152800619,
+        "pc1_population_r": 0.35892732112307224,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.12603013305912195,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": 0.4133339628666097,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.7319153685913276,
+        "pc1_income_q5_median": 0.04543574380199722
+      }
+    },
+    {
+      "bw": 950,
+      "cutoff": 4750,
+      "file": "/data/nantes/bw950.geojson",
+      "analysis": {
+        "pc1_evr": 0.9455287472489255,
+        "pc1_population_r": 0.36169991052350187,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.13051649499671636,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": 0.4203484053318445,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.7142641232526381,
+        "pc1_income_q5_median": 0.08133927900351123
+      }
+    },
+    {
+      "bw": 1000,
+      "cutoff": 5000,
+      "file": "/data/nantes/bw1000.geojson",
+      "analysis": {
+        "pc1_evr": 0.9480672199647037,
+        "pc1_population_r": 0.3640658142956346,
+        "population_correlation_n": 1222,
+        "pc1_income_spearman": 0.13444659815327983,
+        "income_correlation_n": 1222,
+        "pc1_income_gap": 0.41755402359147276,
+        "pc1_income_gap_n": 490,
+        "pc1_income_q1_median": -0.6916483949555146,
+        "pc1_income_q5_median": 0.1119563586331278
+      }
+    }
+  ]
+}

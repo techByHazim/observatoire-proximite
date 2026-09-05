@@ -1,0 +1,76 @@
+OBSERVATOIRE DE LA PROXIMITÉ — VERSION 2
+========================================
+
+Cette version ajoute :
+
+- les échelles disponibles entre 50 et 1000 m ;
+- le contrôle automatique cutoff = 5 × bw ;
+- une lecture continue rouge–blanc–vert centrée sur 1 pour les cinq fonctions ;
+- une lecture continue identique pour PC1_pos ramenée à sa moyenne communale ;
+- des quintiles locaux pour le revenu et la population ;
+- une information limitée à l'indicateur actif au survol de la carte ;
+- trois espaces : Carte, Graphiques, Méthode et données.
+
+
+1. FICHIERS À COPIER
+--------------------
+
+Copier les fichiers en conservant cette arborescence :
+
+- app/app.vue
+- app/components/MapView.client.vue
+- app/components/ChartView.client.vue
+- data_pipeline/export_all_web.py
+- nuxt.config.ts
+
+
+2. EXPORTER TOUTES LES ÉCHELLES DISPONIBLES
+-------------------------------------------
+
+Depuis C:\Users\hazim\Desktop\observatoire-proximite, avec geo_env activé :
+
+python .\data_pipeline\export_all_web.py "C:\Users\hazim\Desktop\inequity_postproc\data\processed\ext\Marseille\carreaux" --ville Marseille --sortie ".\public\data" --bw-min 50 --bw-max 1000
+
+Le script ne suppose pas une liste fixe de valeurs de bw. Il détecte les fichiers
+existants dont le nom respecte :
+
+stats_carr200m_filo_merged_Marseille_bw<BW>_cut<CUTOFF>_pca.gpkg
+
+Il conserve seulement ceux pour lesquels CUTOFF = 5 × BW, puis crée :
+
+- public/data/marseille/bw50.geojson
+- public/data/marseille/bw100.geojson
+- etc., selon les fichiers réellement présents ;
+- public/data/marseille/manifest.json
+
+
+3. REDÉMARRER NUXT
+------------------
+
+Arrêter le serveur avec Ctrl+C, puis exécuter :
+
+Remove-Item -Recurse -Force .\node_modules\.cache\vite -ErrorAction SilentlyContinue
+Remove-Item -Recurse -Force .\.nuxt -ErrorAction SilentlyContinue
+npm run dev
+
+
+4. ACTUALISER
+-------------
+
+Ouvrir http://localhost:3000 et effectuer Ctrl+F5.
+
+
+NOTE SCIENTIFIQUE
+-----------------
+
+Pour les fonctions sociales :
+
+indice relatif = accessibilité du carreau / moyenne des carreaux de Marseille
+
+Pour PC1 :
+
+indice relatif = PC1_pos du carreau / moyenne communale de PC1_pos
+
+La valeur 1 est la moyenne communale. Cette représentation sert à lire les
+contrastes internes à la ville. Elle ne doit pas être interprétée comme une
+comparaison des niveaux absolus entre plusieurs villes.

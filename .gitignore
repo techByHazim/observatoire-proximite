@@ -6,8 +6,11 @@
 .cache
 dist
 
-# history
-.history/
+# 
+node_modules
+.env
+.history
+*.gpkg
 
 # Node dependencies
 node_modules

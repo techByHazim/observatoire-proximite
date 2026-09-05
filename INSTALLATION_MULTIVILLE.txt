@@ -1,0 +1,103 @@
+OBSERVATOIRE DE LA PROXIMITÉ — VERSION MULTIVILLE
+=================================================
+
+Cette version ajoute :
+
+- les dix villes étudiées ;
+- les échelles réellement disponibles entre 50 et 1000 m ;
+- le contrôle automatique cutoff = 5 × bw ;
+- les limites communales officielles ;
+- le recadrage automatique de la carte lors du changement de ville ;
+- une lecture rouge–blanc–vert centrée sur 1 pour les fonctions et PC1 ;
+- des quintiles locaux pour le revenu et la population ;
+- trois espaces : Carte, Graphiques, Méthode et données.
+
+
+1. FICHIERS À COPIER
+--------------------
+
+Copier les fichiers vers les emplacements suivants :
+
+- app/app.vue
+- app/components/MapView.client.vue
+- app/components/ChartView.client.vue
+- data_pipeline/export_cities_web.py
+- nuxt.config.ts
+
+Le précédent export_all_web.py peut être conservé, mais il n'est plus utilisé
+pour l'export général des dix villes.
+
+
+2. EXPORTER LES DIX VILLES
+--------------------------
+
+Depuis C:\Users\hazim\Desktop\observatoire-proximite, avec geo_env activé :
+
+python .\data_pipeline\export_cities_web.py "C:\Users\hazim\Desktop\inequity_postproc\data\processed\ext" --sortie ".\public\data" --bw-min 50 --bw-max 1000
+
+Le script parcourt automatiquement :
+
+- Paris
+- Marseille
+- Lyon
+- Toulouse
+- Nice
+- Nantes
+- Montpellier
+- Strasbourg
+- Bordeaux
+- Lille
+
+Pour tester d'abord seulement Marseille et Lyon :
+
+python .\data_pipeline\export_cities_web.py "C:\Users\hazim\Desktop\inequity_postproc\data\processed\ext" --sortie ".\public\data" --villes Marseille Lyon --bw-min 50 --bw-max 1000
+
+Le menu du site affichera uniquement les villes effectivement exportées.
+
+
+3. FICHIERS CRÉÉS
+-----------------
+
+Le script génère notamment :
+
+- public/data/cities.json
+- public/data/marseille/boundary.geojson
+- public/data/marseille/bw50.geojson
+- public/data/marseille/bw100.geojson
+- public/data/paris/boundary.geojson
+- public/data/paris/bw50.geojson
+- etc.
+
+Chaque limite communale est téléchargée depuis l'API officielle du découpage
+administratif. Si elle existe déjà, elle est réutilisée. Pour la télécharger à
+nouveau, ajouter l'option :
+
+--actualiser-limites
+
+
+4. REDÉMARRER NUXT
+------------------
+
+Arrêter le serveur avec Ctrl+C, puis exécuter :
+
+Remove-Item -Recurse -Force .\node_modules\.cache\vite -ErrorAction SilentlyContinue
+Remove-Item -Recurse -Force .\.nuxt -ErrorAction SilentlyContinue
+npm run dev
+
+
+5. ACTUALISER LE NAVIGATEUR
+---------------------------
+
+Ouvrir http://localhost:3000 et effectuer Ctrl+F5.
+
+
+LECTURE SCIENTIFIQUE
+--------------------
+
+Les fonctions sociales sont divisées par leur moyenne dans chaque ville et
+pour chaque valeur de bw. PC1_pos est également divisée par sa moyenne dans la
+ville et à l'échelle considérée. La valeur 1 représente donc la moyenne locale.
+
+Les quintiles du revenu et de la population sont eux aussi calculés séparément
+dans chaque ville. Ces représentations servent à comparer les quartiers d'une
+même ville, et non les niveaux absolus entre les villes.

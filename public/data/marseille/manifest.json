@@ -1,0 +1,328 @@
+{
+  "name": "Marseille",
+  "slug": "marseille",
+  "code": "13055",
+  "boundary": "/data/marseille/boundary.geojson",
+  "scales": [
+    {
+      "bw": 50,
+      "cutoff": 250,
+      "file": "/data/marseille/bw50.geojson",
+      "analysis": {
+        "pc1_evr": 0.4478031633667058,
+        "pc1_population_r": 0.3803133252739476,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.40892509218884876,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.6964961790710131,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.8166698586109318,
+        "pc1_income_q5_median": -2.060235074530079
+      }
+    },
+    {
+      "bw": 100,
+      "cutoff": 500,
+      "file": "/data/marseille/bw100.geojson",
+      "analysis": {
+        "pc1_evr": 0.563011517429777,
+        "pc1_population_r": 0.46514421211203744,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.4218267524222328,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.7759360005329372,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.4077363643109413,
+        "pc1_income_q5_median": -2.032048569504504
+      }
+    },
+    {
+      "bw": 150,
+      "cutoff": 750,
+      "file": "/data/marseille/bw150.geojson",
+      "analysis": {
+        "pc1_evr": 0.669804727321553,
+        "pc1_population_r": 0.5019787461446212,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.4262757133394377,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.8078261882383753,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.1866051596448699,
+        "pc1_income_q5_median": -1.928008275419344
+      }
+    },
+    {
+      "bw": 200,
+      "cutoff": 1000,
+      "file": "/data/marseille/bw200.geojson",
+      "analysis": {
+        "pc1_evr": 0.7484478516064419,
+        "pc1_population_r": 0.5192200118102837,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.42909454428220306,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.8160745791150247,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.1289944863689345,
+        "pc1_income_q5_median": -1.8609084811529677
+      }
+    },
+    {
+      "bw": 250,
+      "cutoff": 1250,
+      "file": "/data/marseille/bw250.geojson",
+      "analysis": {
+        "pc1_evr": 0.8033483674777153,
+        "pc1_population_r": 0.5291079350385133,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.42959978152002726,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.8318471758417616,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.05877278206015024,
+        "pc1_income_q5_median": -1.7812255114866091
+      }
+    },
+    {
+      "bw": 300,
+      "cutoff": 1500,
+      "file": "/data/marseille/bw300.geojson",
+      "analysis": {
+        "pc1_evr": 0.8423866051925957,
+        "pc1_population_r": 0.5355674735373571,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.4280220207671287,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.8447542477300968,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.024835817154255313,
+        "pc1_income_q5_median": -1.7431196896766321
+      }
+    },
+    {
+      "bw": 350,
+      "cutoff": 1750,
+      "file": "/data/marseille/bw350.geojson",
+      "analysis": {
+        "pc1_evr": 0.8708759274814694,
+        "pc1_population_r": 0.540589946332814,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.4245881756771241,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.8219730171953075,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.06512658275099481,
+        "pc1_income_q5_median": -1.6985867985112024
+      }
+    },
+    {
+      "bw": 400,
+      "cutoff": 2000,
+      "file": "/data/marseille/bw400.geojson",
+      "analysis": {
+        "pc1_evr": 0.8942287460900801,
+        "pc1_population_r": 0.5506849224879502,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.41346200970219765,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.8255106672089672,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.06734632989534228,
+        "pc1_income_q5_median": -1.6496788849923714
+      }
+    },
+    {
+      "bw": 450,
+      "cutoff": 2250,
+      "file": "/data/marseille/bw450.geojson",
+      "analysis": {
+        "pc1_evr": 0.9082962023474215,
+        "pc1_population_r": 0.5484380230554482,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.4150833981292369,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.8337160755727334,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.04609078000726141,
+        "pc1_income_q5_median": -1.6324836033828332
+      }
+    },
+    {
+      "bw": 500,
+      "cutoff": 2500,
+      "file": "/data/marseille/bw500.geojson",
+      "analysis": {
+        "pc1_evr": 0.9208785663342104,
+        "pc1_population_r": 0.5519110838522816,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.40971453759028753,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.8094936483160782,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.06508730508592642,
+        "pc1_income_q5_median": -1.5844199757287352
+      }
+    },
+    {
+      "bw": 550,
+      "cutoff": 2750,
+      "file": "/data/marseille/bw550.geojson",
+      "analysis": {
+        "pc1_evr": 0.9307936634704144,
+        "pc1_population_r": 0.5551014195502735,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.40460763566271724,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.7608098169626838,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.11335240224128817,
+        "pc1_income_q5_median": -1.560769676502339
+      }
+    },
+    {
+      "bw": 600,
+      "cutoff": 3000,
+      "file": "/data/marseille/bw600.geojson",
+      "analysis": {
+        "pc1_evr": 0.9386923055474858,
+        "pc1_population_r": 0.5579671657139628,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.39924267698101656,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.7482793374842882,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.12143096680816523,
+        "pc1_income_q5_median": -1.55311441967048
+      }
+    },
+    {
+      "bw": 650,
+      "cutoff": 3250,
+      "file": "/data/marseille/bw650.geojson",
+      "analysis": {
+        "pc1_evr": 0.9450967222831315,
+        "pc1_population_r": 0.5605107714562237,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.39405499176897324,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.7326886076684932,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.11094278247366063,
+        "pc1_income_q5_median": -1.5333820654484258
+      }
+    },
+    {
+      "bw": 700,
+      "cutoff": 3500,
+      "file": "/data/marseille/bw700.geojson",
+      "analysis": {
+        "pc1_evr": 0.9503573156716388,
+        "pc1_population_r": 0.5626287024217416,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.3889413265728617,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.70902838656202,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.11831657365887738,
+        "pc1_income_q5_median": -1.5031162702856566
+      }
+    },
+    {
+      "bw": 750,
+      "cutoff": 3750,
+      "file": "/data/marseille/bw750.geojson",
+      "analysis": {
+        "pc1_evr": 0.9547538630629796,
+        "pc1_population_r": 0.5642614646214981,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.38403828180802857,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.6919513362532513,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.11530919433351539,
+        "pc1_income_q5_median": -1.4809598988001331
+      }
+    },
+    {
+      "bw": 800,
+      "cutoff": 4000,
+      "file": "/data/marseille/bw800.geojson",
+      "analysis": {
+        "pc1_evr": 0.958470689356445,
+        "pc1_population_r": 0.56559373888248,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.379423381684842,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.6916042597960526,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.10975096876675527,
+        "pc1_income_q5_median": -1.485123955504303
+      }
+    },
+    {
+      "bw": 850,
+      "cutoff": 4250,
+      "file": "/data/marseille/bw850.geojson",
+      "analysis": {
+        "pc1_evr": 0.961645763524192,
+        "pc1_population_r": 0.566616371430543,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.375432310565342,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.6709807215996183,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.11069762357153312,
+        "pc1_income_q5_median": -1.468682523263753
+      }
+    },
+    {
+      "bw": 900,
+      "cutoff": 4500,
+      "file": "/data/marseille/bw900.geojson",
+      "analysis": {
+        "pc1_evr": 0.9643836164142958,
+        "pc1_population_r": 0.5673426013890249,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.3715628845678595,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.671696663889616,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.09038737766581528,
+        "pc1_income_q5_median": -1.4604243106338857
+      }
+    },
+    {
+      "bw": 950,
+      "cutoff": 4750,
+      "file": "/data/marseille/bw950.geojson",
+      "analysis": {
+        "pc1_evr": 0.9667703939092837,
+        "pc1_population_r": 0.567814213909282,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.36810163032392135,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.6800227868873441,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.05792896092317834,
+        "pc1_income_q5_median": -1.4612024857621573
+      }
+    },
+    {
+      "bw": 1000,
+      "cutoff": 5000,
+      "file": "/data/marseille/bw1000.geojson",
+      "analysis": {
+        "pc1_evr": 0.9688573279396987,
+        "pc1_population_r": 0.5680666969461049,
+        "population_correlation_n": 3222,
+        "pc1_income_spearman": -0.36469998307052887,
+        "income_correlation_n": 3222,
+        "pc1_income_gap": -0.6606964027311989,
+        "pc1_income_gap_n": 1290,
+        "pc1_income_q1_median": -0.061561565338140056,
+        "pc1_income_q5_median": -1.4434896451485852
+      }
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "name": "Strasbourg",
+  "slug": "strasbourg",
+  "code": "67482",
+  "boundary": "/data/strasbourg/boundary.geojson",
+  "scales": [
+    {
+      "bw": 50,
+      "cutoff": 250,
+      "file": "/data/strasbourg/bw50.geojson",
+      "analysis": {
+        "pc1_evr": 0.4174669925888537,
+        "pc1_population_r": 0.32422908395496597,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.16345490377044278,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.22477906444928308,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -1.3461729318259583,
+        "pc1_income_q5_median": -1.7038017306825513
+      }
+    },
+    {
+      "bw": 100,
+      "cutoff": 500,
+      "file": "/data/strasbourg/bw100.geojson",
+      "analysis": {
+        "pc1_evr": 0.5574035506641296,
+        "pc1_population_r": 0.33699851639430056,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.17419010441915522,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.3016279598412231,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -1.0149215790814603,
+        "pc1_income_q5_median": -1.5746360553786087
+      }
+    },
+    {
+      "bw": 150,
+      "cutoff": 750,
+      "file": "/data/strasbourg/bw150.geojson",
+      "analysis": {
+        "pc1_evr": 0.658487981720806,
+        "pc1_population_r": 0.34034349664319546,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.16544486833683814,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.3084585782750213,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.8998863446376288,
+        "pc1_income_q5_median": -1.4653612633014212
+      }
+    },
+    {
+      "bw": 200,
+      "cutoff": 1000,
+      "file": "/data/strasbourg/bw200.geojson",
+      "analysis": {
+        "pc1_evr": 0.7273922560083378,
+        "pc1_population_r": 0.33955654930046003,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.14570550552958167,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.30746614810753725,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.7755022354147745,
+        "pc1_income_q5_median": -1.3589057175316905
+      }
+    },
+    {
+      "bw": 250,
+      "cutoff": 1250,
+      "file": "/data/strasbourg/bw250.geojson",
+      "analysis": {
+        "pc1_evr": 0.7760181017213192,
+        "pc1_population_r": 0.33833332763132895,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.1237880577767633,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.265973130016393,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.734961957620007,
+        "pc1_income_q5_median": -1.223930100956405
+      }
+    },
+    {
+      "bw": 300,
+      "cutoff": 1500,
+      "file": "/data/strasbourg/bw300.geojson",
+      "analysis": {
+        "pc1_evr": 0.8113870339620229,
+        "pc1_population_r": 0.33729317931568975,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.10273830153931306,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.22653558261959328,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.709162036577802,
+        "pc1_income_q5_median": -1.1030953329166373
+      }
+    },
+    {
+      "bw": 350,
+      "cutoff": 1750,
+      "file": "/data/strasbourg/bw350.geojson",
+      "analysis": {
+        "pc1_evr": 0.8376665534681722,
+        "pc1_population_r": 0.336365609464834,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.08465557230409626,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.17464200202857422,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.7134181768380068,
+        "pc1_income_q5_median": -1.0154855721154927
+      }
+    },
+    {
+      "bw": 400,
+      "cutoff": 2000,
+      "file": "/data/strasbourg/bw400.geojson",
+      "analysis": {
+        "pc1_evr": 0.8578340279387809,
+        "pc1_population_r": 0.3360826425728221,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.06924949584911956,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.19267415974997137,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.6811853569232138,
+        "pc1_income_q5_median": -1.0013718156695597
+      }
+    },
+    {
+      "bw": 450,
+      "cutoff": 2250,
+      "file": "/data/strasbourg/bw450.geojson",
+      "analysis": {
+        "pc1_evr": 0.8737494278797628,
+        "pc1_population_r": 0.33610054693146674,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.05599633164573273,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.18195515578340474,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.6714791646107485,
+        "pc1_income_q5_median": -0.9736858418305209
+      }
+    },
+    {
+      "bw": 500,
+      "cutoff": 2500,
+      "file": "/data/strasbourg/bw500.geojson",
+      "analysis": {
+        "pc1_evr": 0.8866311934753195,
+        "pc1_population_r": 0.3362467935955498,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.044083955990686534,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.19240638555372788,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.6577294340234772,
+        "pc1_income_q5_median": -0.975512239524419
+      }
+    },
+    {
+      "bw": 550,
+      "cutoff": 2750,
+      "file": "/data/strasbourg/bw550.geojson",
+      "analysis": {
+        "pc1_evr": 0.8973519101368438,
+        "pc1_population_r": 0.3362968828844161,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.03384907474289304,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.16961472056487212,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.6554746782417988,
+        "pc1_income_q5_median": -0.9415192440117877
+      }
+    },
+    {
+      "bw": 600,
+      "cutoff": 3000,
+      "file": "/data/strasbourg/bw600.geojson",
+      "analysis": {
+        "pc1_evr": 0.9064996446749731,
+        "pc1_population_r": 0.33622571510212884,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.025234201072751296,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.1352010416333603,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.6778053782731612,
+        "pc1_income_q5_median": -0.9146525145644221
+      }
+    },
+    {
+      "bw": 650,
+      "cutoff": 3250,
+      "file": "/data/strasbourg/bw650.geojson",
+      "analysis": {
+        "pc1_evr": 0.9143201376213214,
+        "pc1_population_r": 0.33571637765238077,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.017759478575657357,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.08727295749519766,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.6893148134494216,
+        "pc1_income_q5_median": -0.8455313246097513
+      }
+    },
+    {
+      "bw": 700,
+      "cutoff": 3500,
+      "file": "/data/strasbourg/bw700.geojson",
+      "analysis": {
+        "pc1_evr": 0.9210255080642326,
+        "pc1_population_r": 0.33485491634951653,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.01110133999145211,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.06067637608895125,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.6916373994261014,
+        "pc1_income_q5_median": -0.8015328930953022
+      }
+    },
+    {
+      "bw": 750,
+      "cutoff": 3750,
+      "file": "/data/strasbourg/bw750.geojson",
+      "analysis": {
+        "pc1_evr": 0.9269000922705508,
+        "pc1_population_r": 0.3340029736943045,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.00524974994562998,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.06121054507424175,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.6819238399750349,
+        "pc1_income_q5_median": -0.7939276240485483
+      }
+    },
+    {
+      "bw": 800,
+      "cutoff": 4000,
+      "file": "/data/strasbourg/bw800.geojson",
+      "analysis": {
+        "pc1_evr": 0.9320459539387618,
+        "pc1_population_r": 0.3330656317858572,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": -0.001133459060675304,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.037035705756358776,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.6831795904480964,
+        "pc1_income_q5_median": -0.7514131502621172
+      }
+    },
+    {
+      "bw": 850,
+      "cutoff": 4250,
+      "file": "/data/strasbourg/bw850.geojson",
+      "analysis": {
+        "pc1_evr": 0.9365617385352987,
+        "pc1_population_r": 0.33209696178456594,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": 0.002778600099729758,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.0350544448095642,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.6702484491711744,
+        "pc1_income_q5_median": -0.7353463564169568
+      }
+    },
+    {
+      "bw": 900,
+      "cutoff": 4500,
+      "file": "/data/strasbourg/bw900.geojson",
+      "analysis": {
+        "pc1_evr": 0.9405576137519881,
+        "pc1_population_r": 0.3312419493174896,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": 0.0060301267692093345,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.02021896366857158,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.6682927546914206,
+        "pc1_income_q5_median": -0.7058671994696608
+      }
+    },
+    {
+      "bw": 950,
+      "cutoff": 4750,
+      "file": "/data/strasbourg/bw950.geojson",
+      "analysis": {
+        "pc1_evr": 0.944092844627367,
+        "pc1_population_r": 0.3305346937957632,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": 0.008736402082090651,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.00855334804717536,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.6608365633901305,
+        "pc1_income_q5_median": -0.6767835255819934
+      }
+    },
+    {
+      "bw": 1000,
+      "cutoff": 5000,
+      "file": "/data/strasbourg/bw1000.geojson",
+      "analysis": {
+        "pc1_evr": 0.9472137187096165,
+        "pc1_population_r": 0.3299651301679211,
+        "population_correlation_n": 981,
+        "pc1_income_spearman": 0.010907626502599698,
+        "income_correlation_n": 981,
+        "pc1_income_gap": -0.0008165192207428253,
+        "pc1_income_gap_n": 393,
+        "pc1_income_q1_median": -0.6487960100591181,
+        "pc1_income_q5_median": -0.6503173426910398
+      }
+    }
+  ]
+}
