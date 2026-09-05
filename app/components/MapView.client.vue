@@ -68,8 +68,14 @@ import {
   NavigationControl,
   Popup,
   ScaleControl,
+  setWorkerUrl,
 } from "maplibre-gl"
+
+import maplibreWorkerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?url"
+
 import "maplibre-gl/dist/maplibre-gl.css"
+
+setWorkerUrl(maplibreWorkerUrl)
 
 type IndicatorMode = "relative" | "value"
 
