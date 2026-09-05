@@ -133,7 +133,7 @@ let currentData: ChartFeatureCollection | null = null
 let requestNumber = 0
 
 const defaultIndicator: IndicatorConfig = {
-  label: "Accessibilité synthétique (PC1)",
+  label: "Accessibilité générale",
   valueProperty: "rel_pc1",
   mode: "relative",
   decimals: 2,
@@ -143,35 +143,35 @@ const defaultIndicator: IndicatorConfig = {
 const indicatorConfigs: Record<string, IndicatorConfig> = {
   pc1: defaultIndicator,
   commerce: {
-    label: "Accessibilité — Commerce",
+    label: "Accessibilité au commerce",
     valueProperty: "rel_commerce",
     mode: "relative",
     decimals: 2,
     dependsOnScale: true,
   },
   sante: {
-    label: "Accessibilité — Santé",
+    label: "Accessibilité à la santé",
     valueProperty: "rel_sante",
     mode: "relative",
     decimals: 2,
     dependsOnScale: true,
   },
   education: {
-    label: "Accessibilité — Éducation",
+    label: "Accessibilité à l'éducation",
     valueProperty: "rel_education",
     mode: "relative",
     decimals: 2,
     dependsOnScale: true,
   },
   services: {
-    label: "Accessibilité — Services",
+    label: "Accessibilité aux services",
     valueProperty: "rel_services",
     mode: "relative",
     decimals: 2,
     dependsOnScale: true,
   },
   loisirs: {
-    label: "Accessibilité — Loisirs",
+    label: "Accessibilité aux loisirs",
     valueProperty: "rel_loisirs",
     mode: "relative",
     decimals: 2,

@@ -80,13 +80,13 @@ const availableCities = ref<CityEntry[]>([
 ])
 
 const indicators = [
-  { key: "pc1", label: "Accessibilité synthétique (PC1)" },
-  { key: "commerce", label: "Commerce" },
-  { key: "sante", label: "Santé" },
-  { key: "education", label: "Éducation" },
-  { key: "services", label: "Services" },
-  { key: "loisirs", label: "Loisirs" },
-  { key: "revenu", label: "Revenu" },
+  { key: "pc1", label: "Accessibilité générale" },
+  { key: "commerce", label: "Accessibilité au commerce" },
+  { key: "sante", label: "Accessibilité à la santé" },
+  { key: "education", label: "Accessibilité à l'éducation" },
+  { key: "services", label: "Accessibilité aux services" },
+  { key: "loisirs", label: "Accessibilité aux loisirs" },
+  { key: "revenu", label: "Niveau de vie" },
   { key: "population", label: "Population" },
 ]
 
@@ -543,7 +543,7 @@ watch(
           </article>
 
           <article>
-            <h3>Accessibilité synthétique</h3>
+            <h3>Accessibilité générale</h3>
             <p>
               La PC1 résume la dimension commune aux cinq fonctions. Pour la
               carte locale, PC1 positive est divisée par sa moyenne communale.
