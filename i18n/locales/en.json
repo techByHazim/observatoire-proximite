@@ -16,5 +16,9 @@
     "change": "Change language",
     "french": "Français",
     "english": "English"
-  }
+  },
+    "footer": {
+        "author": "Website design, texts and analyses",
+        "rights": "The data, map backgrounds and libraries used retain their respective licenses. Sources and detailed methods are available in the \"Methods and data\" section."
+    }
 }

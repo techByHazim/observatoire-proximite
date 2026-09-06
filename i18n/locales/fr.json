@@ -16,5 +16,9 @@
     "change": "Changer de langue",
     "french": "Français",
     "english": "English"
-  }
+  },
+    "footer": {
+    "author": "Conception du site, textes et analyses",
+    "rights": "Les données, fonds de carte et bibliothèques utilisés conservent leurs licences respectives. Sources et méthode détaillées dans « Méthode et données »."
+   }
 }
