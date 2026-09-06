@@ -32,7 +32,7 @@ Les résultats sont représentés sur le carroyage Insee de 200 mètres.
 
 ## Méthode
 
-L’accessibilité d’un lieu `g` à une fonction sociale `f` est calculée à partir d’un noyau de décroissance exponentielle :
+L’accessibilité d’un lieu `g` à une fonction sociale `f` est calculée à partir d’une fonction de décroissance exponentielle :
 
 ```text
 A(g,f,λ) = Σ wᵢ × exp(−d(g,i) / λ)
