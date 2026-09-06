@@ -4,6 +4,7 @@ import CityIndicatorsChart from "./components/CityIndicatorsChart.client.vue"
 import CommonStructureChart from "./components/CommonStructureChart.client.vue"
 import MapView from "./components/MapView.client.vue"
 import SourcesReferences from "./components/SourcesReferences.vue"
+import MethodDocumentation from "./components/MethodDocumentation.vue"
 
 interface ScaleAnalysis {
   pc1_evr: number | null
@@ -622,92 +623,10 @@ watch(
       </section>
 
       <section v-else class="content-card method-page">
-        <div class="section-heading">
-          <div>
-            <span class="eyebrow">Documentation</span>
-            <h2>Méthode, paramètres et données</h2>
-            <p>
-              Les informations nécessaires pour interpréter correctement les
-              cartes et les graphiques.
-            </p>
-          </div>
-        </div>
-
-        <div class="method-grid">
-          <article>
-            <h3>Unité spatiale</h3>
-            <p>
-              Les résultats sont agrégés sur le carroyage Insee de 200 mètres.
-              La lecture proposée ici est locale à {{ currentCityName }}.
-            </p>
-          </article>
-
-          <article>
-            <h3>Accessibilité</h3>
-            <p>
-              Pour une fonction sociale <em>f</em>, l’accessibilité d’un lieu
-              <em>g</em> est calculée par une somme pondérée des équipements :
-            </p>
-            <p class="formula">
-              A<sub>g,f</sub>(λ) = Σ w<sub>i</sub> exp(−d<sub>g,i</sub>/λ)
-            </p>
-            <p>
-              Le calcul s’arrête à 5 × λ. Lorsque λ vaut {{ selectedBw }} m,
-              le seuil est donc {{ currentCutoff }} m.
-            </p>
-          </article>
-
-          <article>
-            <h3>Fonctions sociales</h3>
-            <p>
-              Cinq dimensions sont distinguées : commerce, santé, éducation,
-              services du quotidien et loisirs, culture et sociabilité.
-            </p>
-          </article>
-
-          <article>
-            <h3>Lecture relative</h3>
-            <p>
-              Les fonctions sociales sont divisées par leur moyenne communale.
-              La valeur 1 représente donc la moyenne de {{ currentCityName }}.
-              Le rouge
-              correspond aux valeurs inférieures à 1 et le vert aux valeurs
-              supérieures à 1.
-            </p>
-          </article>
-
-          <article>
-            <h3>Limite communale</h3>
-            <p>
-              Le contour affiché provient de l’API officielle du découpage
-              administratif. Il sert de repère territorial et ne remplace pas
-              les carreaux utilisés pour les calculs.
-            </p>
-          </article>
-
-          <article>
-            <h3>Accessibilité générale</h3>
-            <p>
-              La PC1 résume la dimension commune aux cinq fonctions. Pour la
-              carte locale, PC1 positive est divisée par sa moyenne communale.
-              Cet indice relatif sert à comparer les quartiers d’une même ville,
-              pas directement les niveaux absolus entre villes.
-            </p>
-          </article>
-
-          <article>
-            <h3>Revenu et population</h3>
-            <p>
-              Ces variables ne sont pas des indicateurs d’accessibilité. Elles
-              sont représentées sur une échelle continue dans leurs unités
-              observées : euros annuels par unité de consommation pour le
-              niveau de vie et habitants par carreau pour la population. Elles
-              ne dépendent pas de la distance caractéristique λ.
-            </p>
-          </article>
-        </div>
+        <MethodDocumentation />
         <SourcesReferences />
       </section>
+      
     </main>
 
     <footer class="site-footer">

@@ -134,7 +134,6 @@ const references = [
     <aside class="thesis-note">
       <h4>{{ t("thesisTitle") }}</h4>
       <p>{{ t("thesisDescription") }}</p>
-      <p>{{ t("thresholdNote") }}</p>
     </aside>
   </section>
 </template>
