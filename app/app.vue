@@ -3,6 +3,7 @@ import ChartView from "./components/ChartView.client.vue"
 import CityIndicatorsChart from "./components/CityIndicatorsChart.client.vue"
 import CommonStructureChart from "./components/CommonStructureChart.client.vue"
 import MapView from "./components/MapView.client.vue"
+import SourcesReferences from "./components/SourcesReferences.vue"
 
 interface ScaleAnalysis {
   pc1_evr: number | null
@@ -705,21 +706,21 @@ watch(
             </p>
           </article>
         </div>
-
-        <div class="sources-panel">
-          <h3>Principales sources</h3>
-          <ul>
-            <li>Insee — carroyage Filosofi 2021 et niveau de vie.</li>
-            <li>Insee — Base permanente des équipements 2024.</li>
-            <li>OpenStreetMap — équipements complémentaires et réseau piéton.</li>
-            <li>
-              API Découpage administratif — contours communaux officiels.
-            </li>
-            <li>Calculs et traitements issus des travaux de thèse.</li>
-          </ul>
-        </div>
+        <SourcesReferences />
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>
+      © {{ new Date().getFullYear() }}
+      <strong>Hazim Moindze</strong>
+      , {{ t("footer.author") }}
+      </p>
+
+      <p>
+      {{ t("footer.rights") }}
+      </p>
+      </footer>
   </div>
 </template>
 
@@ -1276,6 +1277,26 @@ button {
       transparent 58%
     ),
     #012169;
+}
+
+.site-footer {
+  width: min(1500px, 100%);
+  margin: 0 auto;
+  padding: 20px 24px 28px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 4px 0;
+}
+
+.site-footer strong {
+  color: var(--ink);
+  font-weight: 600;
 }
 
 html[data-theme="dark"] {
