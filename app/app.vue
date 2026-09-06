@@ -71,6 +71,14 @@ useHead(() => ({
   htmlAttrs: {
     lang: locale.value,
   },
+
+  link: [
+    {
+      rel: "icon",
+      type: "image/png",
+      href: "/image.png?v=1",
+    },
+  ],
 }))
 
 const darkMode = computed(() => colorTheme.value === "dark")
