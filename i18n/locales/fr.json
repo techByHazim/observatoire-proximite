@@ -1,0 +1,20 @@
+{
+  "header": {
+    "title": "Observatoire de la proximité urbaine",
+    "subtitle": "Explorer les accessibilités et les inégalités dans dix villes françaises"
+  },
+  "navigation": {
+    "label": "Sections de l’observatoire",
+    "map": "Carte",
+    "charts": "Graphiques",
+    "method": "Méthode et données"
+  },
+  "theme": {
+    "toggle": "Basculer entre le mode clair et sombre"
+  },
+  "language": {
+    "change": "Changer de langue",
+    "french": "Français",
+    "english": "English"
+  }
+}

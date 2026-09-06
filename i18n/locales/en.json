@@ -1,0 +1,20 @@
+{
+  "header": {
+    "title": "Urban Proximity Observatory",
+    "subtitle": "Exploring accessibility and inequalities across ten French cities"
+  },
+  "navigation": {
+    "label": "Observatory sections",
+    "map": "Map",
+    "charts": "Charts",
+    "method": "Methods and data"
+  },
+  "theme": {
+    "toggle": "Switch between light and dark mode"
+  },
+  "language": {
+    "change": "Change language",
+    "french": "Français",
+    "english": "English"
+  }
+}

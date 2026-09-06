@@ -47,6 +47,32 @@ const selectedCitySlug = ref("marseille")
 const manifestError = ref("")
 const colorTheme = ref<ColorTheme>("light")
 
+type LocaleCode = "fr" | "en"
+
+const languageMenu = ref<HTMLDetailsElement | null>(null)
+
+const {
+  locale,
+  setLocale,
+  t,
+} = useI18n()
+
+async function changeLocale(code: LocaleCode) {
+  await setLocale(code)
+
+  if (languageMenu.value) {
+    languageMenu.value.open = false
+  }
+}
+
+useHead(() => ({
+  title: t("header.title"),
+
+  htmlAttrs: {
+    lang: locale.value,
+  },
+}))
+
 const darkMode = computed(() => colorTheme.value === "dark")
 
 function applyTheme(theme: ColorTheme) {
@@ -214,20 +240,23 @@ watch(
     <header class="header">
       <div class="header-inner">
         <div>
-          <h1>Observatoire de la proximité urbaine</h1>
+          <h1>{{ t("header.title") }}</h1>
+
           <p>
-            Explorer les accessibilités et les inégalités dans dix villes
-            françaises
+            {{ t("header.subtitle") }}
           </p>
         </div>
 
-        <nav class="main-navigation" aria-label="Sections de l’observatoire">
+        <nav
+          class="main-navigation"
+          :aria-label="t('navigation.label')"
+        >
           <button
             type="button"
             :class="{ active: activeView === 'map' }"
             @click="activeView = 'map'"
           >
-            Carte
+            {{ t("navigation.map") }}
           </button>
 
           <button
@@ -235,7 +264,7 @@ watch(
             :class="{ active: activeView === 'charts' }"
             @click="activeView = 'charts'"
           >
-            Graphiques
+            {{ t("navigation.charts") }}
           </button>
 
           <button
@@ -243,47 +272,131 @@ watch(
             :class="{ active: activeView === 'method' }"
             @click="activeView = 'method'"
           >
-            Méthode et données
+            {{ t("navigation.method") }}
           </button>
         </nav>
 
-        <button
-          type="button"
-          class="theme-toggle"
-          :aria-pressed="darkMode"
-          aria-label="Basculer entre le mode clair et sombre"
-          data-tooltip="Basculer entre le mode clair et sombre"
-          @click="toggleTheme"
-        >
-          <!-- Soleil : permet de revenir au mode clair -->
-          <svg
-            v-if="darkMode"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
+        <div class="header-actions">
+          <!-- Bouton clair/sombre -->
+          <button
+            type="button"
+            class="theme-toggle"
+            :aria-pressed="darkMode"
+            :aria-label="t('theme.toggle')"
+            :data-tooltip="t('theme.toggle')"
+            @click="toggleTheme"
           >
-            <circle cx="12" cy="12" r="4" />
-            <path
-              d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42
-                 M17.65 17.65l1.42 1.42M2 12h2M20 12h2
-                 M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"
-            />
-          </svg>
+            <svg
+              v-if="darkMode"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
 
-          <!-- Lune : permet de passer au mode sombre -->
-          <svg
-            v-else
-            viewBox="0 0 24 24"
-            aria-hidden="true"
+              <path
+                d="M12 2v2
+                   M12 20v2
+                   M4.93 4.93l1.42 1.42
+                   M17.65 17.65l1.42 1.42
+                   M2 12h2
+                   M20 12h2
+                   M4.93 19.07l1.42-1.42
+                   M17.65 6.35l1.42-1.42"
+              />
+            </svg>
+
+            <svg
+              v-else
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 12.79A9 9 0 1 1 11.21 3
+                   7 7 0 0 0 21 12.79Z"
+              />
+            </svg>
+          </button>
+
+          <!-- Sélecteur de langue -->
+          <details
+            ref="languageMenu"
+            class="language-menu"
           >
-            <path
-              d="M21 12.79A9 9 0 1 1 11.21 3
-                 7 7 0 0 0 21 12.79Z"
-            />
-          </svg>
-        </button>
+            <summary
+              class="theme-toggle language-toggle"
+              :aria-label="t('language.change')"
+              :data-tooltip="t('language.change')"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18" />
+                <path d="M12 3a15 15 0 0 1 0 18" />
+                <path d="M12 3a15 15 0 0 0 0 18" />
+              </svg>
+
+              <span
+                class="current-language-flag"
+                :class="
+                  locale === 'fr'
+                    ? 'flag-fr'
+                    : 'flag-gb'
+                "
+                aria-hidden="true"
+              ></span>
+            </summary>
+
+            <div class="language-options">
+              <button
+                type="button"
+                :class="{ active: locale === 'fr' }"
+                @click="changeLocale('fr')"
+              >
+                <span
+                  class="language-flag flag-fr"
+                  aria-hidden="true"
+                ></span>
+
+                <span>
+                  {{ t("language.french") }}
+                </span>
+
+                <span
+                  v-if="locale === 'fr'"
+                  aria-hidden="true"
+                >
+                  ✓
+                </span>
+              </button>
+
+              <button
+                type="button"
+                :class="{ active: locale === 'en' }"
+                @click="changeLocale('en')"
+              >
+                <span
+                  class="language-flag flag-gb"
+                  aria-hidden="true"
+                ></span>
+
+                <span>
+                  {{ t("language.english") }}
+                </span>
+
+                <span
+                  v-if="locale === 'en'"
+                  aria-hidden="true"
+                >
+                  ✓
+                </span>
+              </button>
+            </div>
+          </details>
+        </div>
       </div>
     </header>
-
     <main class="page-content">
       <p v-if="manifestError" class="notice">
         {{ manifestError }}
@@ -998,6 +1111,163 @@ button {
   min-height: 420px;
   color: var(--muted);
   place-items: center;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.language-menu {
+  position: relative;
+}
+
+.language-toggle {
+  list-style: none;
+}
+
+.language-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.language-menu[open] .language-toggle {
+  color: #ffffff;
+  background: rgb(89 195 195 / 25%);
+  border-color: #59c3c3;
+}
+
+.language-menu[open] .language-toggle::after {
+  display: none;
+}
+
+.language-options {
+  position: absolute;
+  z-index: 50;
+  top: calc(100% + 7px);
+  right: 0;
+  display: grid;
+  gap: 4px;
+  width: 150px;
+  padding: 6px;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  box-shadow: 0 8px 25px rgb(0 0 0 / 22%);
+}
+
+.language-options button:hover {
+  background: var(--background);
+}
+
+.language-options button.active {
+  color: #ffffff;
+  background: var(--teal);
+}
+
+.language-toggle {
+  position: relative;
+}
+
+.current-language-flag {
+  position: absolute;
+  right: -5px;
+  bottom: -3px;
+  width: 21px;
+  height: 14px;
+  border: 2px solid var(--navy);
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 28%);
+}
+
+.language-options button {
+  display: grid;
+  grid-template-columns: 23px 1fr 16px;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 10px;
+  color: var(--ink);
+  text-align: left;
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.language-flag {
+  display: inline-block;
+  width: 23px;
+  height: 15px;
+  border: 1px solid rgb(0 0 0 / 18%);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 15%);
+}
+
+/* Drapeau français */
+
+.flag-fr {
+  background: linear-gradient(
+    to right,
+    #0055a4 0 33.33%,
+    #ffffff 33.33% 66.66%,
+    #ef4135 66.66% 100%
+  );
+}
+
+/* Drapeau britannique */
+
+.flag-gb {
+  background:
+    linear-gradient(
+      to right,
+      transparent 44%,
+      #c8102e 44% 56%,
+      transparent 56%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 39%,
+      #c8102e 39% 61%,
+      transparent 61%
+    ),
+    linear-gradient(
+      28deg,
+      transparent 47%,
+      #c8102e 47% 53%,
+      transparent 53%
+    ),
+    linear-gradient(
+      -28deg,
+      transparent 47%,
+      #c8102e 47% 53%,
+      transparent 53%
+    ),
+    linear-gradient(
+      to right,
+      transparent 36%,
+      #ffffff 36% 64%,
+      transparent 64%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 28%,
+      #ffffff 28% 72%,
+      transparent 72%
+    ),
+    linear-gradient(
+      28deg,
+      transparent 42%,
+      #ffffff 42% 58%,
+      transparent 58%
+    ),
+    linear-gradient(
+      -28deg,
+      transparent 42%,
+      #ffffff 42% 58%,
+      transparent 58%
+    ),
+    #012169;
 }
 
 html[data-theme="dark"] {
