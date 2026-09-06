@@ -767,36 +767,24 @@ async function loadData() {
   }
 }
 
+const BASEMAP_LIGHT =
+  "https://tiles.openfreemap.org/styles/liberty"
+
+const BASEMAP_DARK =
+  "https://tiles.openfreemap.org/styles/dark"
+
+function getBasemapStyle() {
+  return props.darkMode
+    ? BASEMAP_DARK
+    : BASEMAP_LIGHT
+}
+
 function updateBasemapTheme() {
-  if (!map || !map.getLayer("openstreetmap")) {
+  if (!map) {
     return
   }
 
-  const dark = props.darkMode
-
-  map.setPaintProperty(
-    "openstreetmap",
-    "raster-saturation",
-    dark ? -0.65 : 0,
-  )
-
-  map.setPaintProperty(
-    "openstreetmap",
-    "raster-contrast",
-    dark ? 0.18 : 0,
-  )
-
-  map.setPaintProperty(
-    "openstreetmap",
-    "raster-brightness-min",
-    0,
-  )
-
-  map.setPaintProperty(
-    "openstreetmap",
-    "raster-brightness-max",
-    dark ? 0.52 : 1,
-  )
+  map.setStyle(getBasemapStyle())
 }
 
 onMounted(() => {
@@ -806,48 +794,53 @@ onMounted(() => {
 
   const carte = new MapLibreMap({
     container: mapContainer.value,
-    style: {
-      version: 8,
-      sources: {
-        openstreetmap: {
-          type: "raster",
-          tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
-          tileSize: 256,
-          attribution: "© OpenStreetMap contributors",
-        },
-      },
-      layers: [
-        {
-          id: "openstreetmap",
-          type: "raster",
-          source: "openstreetmap",
-        },
-      ],
-    },
+    style: getBasemapStyle(),
     center: [5.3698, 43.2965],
     zoom: 10.5,
   })
 
   map = carte
 
-  carte.addControl(new NavigationControl(), "top-right")
-  carte.addControl(new ScaleControl({ unit: "metric" }), "bottom-left")
+  carte.addControl(
+    new NavigationControl(),
+    "top-right",
+  )
+
+  carte.addControl(
+    new ScaleControl({
+      unit: "metric",
+    }),
+    "bottom-left",
+  )
 
   carte.on("error", (event) => {
-    console.error("Erreur MapLibre :", event.error)
+    console.error(
+      "Erreur MapLibre :",
+      event.error,
+    )
   })
 
   const initializeThematicLayers = () => {
-  updateBasemapTheme()
-  void loadData()
-  void loadBoundary()
+    void loadData()
+    void loadBoundary()
   }
 
+  /*
+   * L’événement reste actif afin de recharger les carreaux
+   * et la limite lorsque le thème cartographique change.
+   */
+  carte.on(
+    "style.load",
+    initializeThematicLayers,
+  )
+
+  /*
+   * Cas où le style serait déjà chargé au moment
+   * de l’installation de l’événement.
+   */
   if (carte.isStyleLoaded()) {
-     initializeThematicLayers()
-  } else {
-  carte.once("style.load", initializeThematicLayers)
- }
+    initializeThematicLayers()
+  }
 })
 
 watch(

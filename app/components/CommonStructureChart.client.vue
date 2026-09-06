@@ -380,13 +380,15 @@ function togglePoint(point: ChartPoint) {
 
 .threshold-summary {
   display: grid;
-  min-width: 125px;
-  padding: 10px 12px;
+  width: max-content;
+  min-width: 105px;
+  padding: 8px 10px;
   color: #425262;
-  text-align: right;
+  text-align: center;
   background: #f1f5f7;
   border: 1px solid #dce3e9;
   border-radius: 8px;
+  flex-shrink: 0;
 }
 
 .threshold-summary span {

@@ -1152,4 +1152,59 @@ html[data-theme="dark"] .point-label {
 html[data-theme="dark"] .threshold-label {
   fill: #fbbf24 !important;
 }
+
+/* Structure commune — correction du mode sombre */
+
+html[data-theme="dark"] .threshold-summary,
+html[data-theme="dark"] .chart-reading {
+  color: #dce6ed !important;
+  background: #1c2d39 !important;
+  border-color: #405363 !important;
+}
+
+html[data-theme="dark"] .threshold-summary strong {
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .chart-reading strong {
+  color: #62d0d2 !important;
+}
+
+/* Graduations et textes du graphique */
+
+html[data-theme="dark"] .structure-chart .grid text,
+html[data-theme="dark"] .structure-chart .plot text {
+  fill: #a9bdca !important;
+}
+
+html[data-theme="dark"] .structure-chart .axis-title {
+  fill: #edf3f8 !important;
+}
+
+html[data-theme="dark"] .structure-chart .threshold-label {
+  fill: #fbbf24 !important;
+}
+
+/* Traits et grille */
+
+html[data-theme="dark"] .structure-chart .grid line {
+  stroke: #405363;
+}
+
+html[data-theme="dark"] .structure-chart .axis,
+html[data-theme="dark"] .structure-chart .tick-mark {
+  stroke: #718494;
+}
+
+/* Petit titre et infobulle */
+
+html[data-theme="dark"] .structure-chart .chart-kicker {
+  color: #5fd0c8 !important;
+}
+
+html[data-theme="dark"] .structure-chart .chart-tooltip {
+  color: #edf3f8;
+  background: rgb(20 35 47 / 97%);
+  border-color: #405363;
+}
 </style>
