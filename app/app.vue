@@ -251,14 +251,35 @@ watch(
           type="button"
           class="theme-toggle"
           :aria-pressed="darkMode"
-          :aria-label="
-            darkMode
-              ? 'Activer le mode clair'
-              : 'Activer le mode sombre'
-          "
+          aria-label="Basculer entre le mode clair et sombre"
+          data-tooltip="Basculer entre le mode clair et sombre"
           @click="toggleTheme"
         >
-          {{ darkMode ? "☀ Mode clair" : "☾ Mode sombre" }}
+          <!-- Soleil : permet de revenir au mode clair -->
+          <svg
+            v-if="darkMode"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42
+                 M17.65 17.65l1.42 1.42M2 12h2M20 12h2
+                 M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"
+            />
+          </svg>
+
+          <!-- Lune : permet de passer au mode sombre -->
+          <svg
+            v-else
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M21 12.79A9 9 0 1 1 11.21 3
+                 7 7 0 0 0 21 12.79Z"
+            />
+          </svg>
         </button>
       </div>
     </header>
@@ -677,18 +698,77 @@ button {
 }
 
 .theme-toggle {
-  min-width: 120px;
+  position: relative;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
   margin-bottom: 7px;
-  padding: 8px 12px;
-  color: #e8f0f6;
-  background: rgb(255 255 255 / 8%);
-  border: 1px solid rgb(255 255 255 / 22%);
-  border-radius: 999px;
+  padding: 0;
+  color: #edf7fa;
+  background: rgb(255 255 255 / 9%);
+  border: 1px solid rgb(255 255 255 / 18%);
+  border-radius: 50%;
   cursor: pointer;
+  place-items: center;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .theme-toggle:hover {
-  background: rgb(255 255 255 / 15%);
+  background: rgb(255 255 255 / 17%);
+  border-color: #59c3c3;
+  transform: translateY(-1px);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid #59c3c3;
+  outline-offset: 3px;
+}
+
+/* Info-bulle */
+
+.theme-toggle::after {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 10px);
+  right: 0;
+  width: max-content;
+  max-width: 250px;
+  padding: 7px 10px;
+  color: #ffffff;
+  background: #0b151e;
+  border: 1px solid #405363;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 25%);
+  content: attr(data-tooltip);
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+  transition:
+    opacity 150ms ease,
+    transform 150ms ease;
+  white-space: nowrap;
+}
+
+.theme-toggle:hover::after,
+.theme-toggle:focus-visible::after {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .page-content {
